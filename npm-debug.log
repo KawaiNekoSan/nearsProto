@@ -1,0 +1,84 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'ngCart' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn package.json nearsproto@1.0.0 No repository field.
+5 warn package.json nearsproto@1.0.0 No README data
+6 silly cache add args [ 'ngCart', null ]
+7 verbose cache add spec ngCart
+8 silly cache add parsed spec { raw: 'ngCart',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'ngCart',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 verbose addNamed ngCart@*
+10 silly addNamed semver.valid null
+11 silly addNamed semver.validRange *
+12 silly addNameRange { name: 'ngCart', range: '*', hasData: false }
+13 silly mapToRegistry name ngCart
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/ngCart
+17 verbose addNameRange registry:https://registry.npmjs.org/ngCart not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/ngCart
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 19:13:42
+21 verbose request id 337f7d719b1350d7
+22 http request GET https://registry.npmjs.org/ngCart
+23 http 404 https://registry.npmjs.org/ngCart
+24 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'cache-control': 'max-age=0',
+24 verbose headers   'content-length': '51',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Tue, 16 Jun 2015 17:13:44 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   age: '0',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-ams4127-AMS',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1434474823.383451,VS0,VE648' }
+25 silly get cb [ 404,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     'content-type': 'application/json',
+25 silly get     'cache-control': 'max-age=0',
+25 silly get     'content-length': '51',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Tue, 16 Jun 2015 17:13:44 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     age: '0',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-ams4127-AMS',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1434474823.383451,VS0,VE648' } ]
+26 verbose stack Error: 404 Not Found: ngCart
+26 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:245:14)
+26 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+26 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:344:22)
+26 verbose stack     at Request.emit (events.js:110:17)
+26 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1239:14)
+26 verbose stack     at Request.emit (events.js:129:20)
+26 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1187:12)
+26 verbose stack     at IncomingMessage.emit (events.js:129:20)
+26 verbose stack     at _stream_readable.js:908:16
+26 verbose stack     at process._tickCallback (node.js:355:11)
+27 verbose statusCode 404
+28 verbose pkgid ngCart
+29 verbose cwd /Users/romain/Documents/nearsProto
+30 error Darwin 14.3.0
+31 error argv "node" "/usr/local/bin/npm" "install" "ngCart"
+32 error node v0.12.2
+33 error npm  v2.7.4
+34 error code E404
+35 error 404 Not Found: ngCart
+35 error 404
+35 error 404 'ngCart' is not in the npm registry.
+35 error 404 You should bug the author to publish it (or use the name yourself!)
+35 error 404 It was specified as a dependency of 'nearsproto'
+35 error 404
+35 error 404 Note that you can also install from a
+35 error 404 tarball, folder, http url, or git url.
+36 verbose exit [ 1, true ]
